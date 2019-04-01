@@ -124,8 +124,8 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 " customize keymapping
-map <Leader>cc <plug>NERDComToggleComment
-map <Leader>c<space> <plug>NERDComComment
+map <Leader>c<space> <plug>NERDComToggleComment
+map <Leader>cc <plug>NERDComComment
 
 
 " Syntastic
@@ -226,6 +226,8 @@ nnoremap <C-k> <C-w>l
 nnoremap <F2> :w
 inoremap <silent><C-w> <ESC>:w<CR>
 nnoremap <silent><C-w> :w<CR>
+
+nnoremap <silent><C-t> :wq<CR>
 
 " esc mapping
 inoremap <leader>qw <ESC>
