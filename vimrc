@@ -240,7 +240,7 @@ inoremap <silent><C-l> <RIGHT>
 
 " Personal mapping
 inoremap {<CR> {<CR>}<ESC>ko
-set langmap=ㅁㅠㅊㅇㄷㄹㅎㅗㅓㅑㅏㅣㅡㅜㅐㅔㅂㄱㄴㅅㅕㅍㅈㅌㅛㅋ;abcdefghijklmnopqrstuvwxyz
+"set langmap=ㅁㅠㅊㅇㄷㄹㅎㅗㅓㅑㅏㅣㅡㅜㅐㅔㅂㄱㄴㅅㅕㅍㅈㅌㅛㅋ;abcdefghijklmnopqrstuvwxyz
 nmap :start a/*************************************************<CR><BS>************************************************<CR>******************** Yuseok *********************<CR>******************** 190000 *********************<CR>*************************************************/<ESC>:include
 nmap :main oint main() {<CR><CR><CR><CR><CR><CR><CR>return 0;<ESC>
 nmap :include o#include <stdio.h><CR>#include <stdlib.h><CR><ESC>:main
