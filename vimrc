@@ -124,8 +124,8 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 " customize keymapping
-map <Leader>c<space> <plug>NERDComToggleComment
-map <Leader>cc <plug>NERDComComment
+map <Leader>cc <plug>NERDComToggleComment
+map <Leader>c<space> <plug>NERDComComment
 
 
 " Syntastic
@@ -242,8 +242,10 @@ inoremap <silent><C-l> <RIGHT>
 inoremap {<CR> {<CR>}<ESC>ko
 "set langmap=ㅁㅠㅊㅇㄷㄹㅎㅗㅓㅑㅏㅣㅡㅜㅐㅔㅂㄱㄴㅅㅕㅍㅈㅌㅛㅋ;abcdefghijklmnopqrstuvwxyz
 nmap :start a/*************************************************<CR><BS>************************************************<CR>******************** Yuseok *********************<CR>******************** 190000 *********************<CR>*************************************************/<ESC>:include
+nmap :pstart a/*************************************************<CR><BS>************************************************<CR>******************** Yuseok *********************<CR>******************** 190000 *********************<CR>*************************************************/<ESC>:pinclude
 nmap :main oint main() {<CR><CR><CR><CR><CR><CR><CR>return 0;<ESC>
 nmap :include o#include <stdio.h><CR>#include <stdlib.h><CR><ESC>:main
+nmap :pinclude o#include <iostream><CR>using namespace std;<CR><ESC>:main
 nmap :comment o/**************************************************<CR><BS>*************************************************<CR>**************************************************/<CR><ESC>
 nmap :change *cgn
 nmap :html i<!DOCTYPE html><CR><html><CR><backspace><head><CR><CR><!-- metadata goes in the head --><CR><title></title><CR><CR><backspace></head><CR><body><CR><CR><!-- content goes in the body --><CR><CR></body><CR></html><ESC>
